@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+form input {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.quizheading, .timer {
+  text-align: center;
+}
+
+.custom-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(IMG/Free\ Photo\ _\ Wall\ Wallpaper\ Concrete\ Colored\ Painted\ Textured\ Concept.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 5px solid rgb(71, 202, 241);
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.quizheading {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.timer {
+  background-color: white;
+  color: #333;
+  text-align: center;
+  width: 7rem;
+  padding: 0.3rem 0;
+  border-radius: 7px;
+  font-size: 1.2rem;
+}
+
+.ques, span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+input[type="radio"] {
+  margin: 0;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+label {
+  font-size: 1rem;
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#btn {
+  background-color: rgb(71, 202, 241);
+  padding: 10px 30px;
+  border-radius: 8px;
+  margin-top: 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.custom-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1000;
+}
+
+.custom-popup h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.custom-popup p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.custom-popup button {
+  padding: 10px 20px;
+  background-color: #7a5fda;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.custom-popup button:hover {
+  background-color: #644cc3;
+}
+
+@media (max-width: 768px) {
+  .quizheading {
+    font-size: 2rem;
+  }
+
+  .timer {
+    width: 6rem;
+    font-size: 1rem;
+  }
+
+  .ques, span {
+    font-size: 1.3rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  #btn {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quizheading {
+    font-size: 1.5rem;
+  }
+
+  .timer {
+    width: 5rem;
+    font-size: 0.9rem;
+  }
+
+  .ques, span {
+    font-size: 1.2rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  #btn {
+    font-size: 0.9rem;
+    padding: 6px 15px;
+  }
+}
